@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3D55A8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlePrimary {
+    background-color: #687BAC;
+    color: #ffffff;
+    width: 100%;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+}
+
+.titlePrimary>h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+.titleInfoStudant {
+    color: #f0f8ff;
+    margin-top: 10px;
+    border-radius: 2vh;
+    padding: 10px;
+}
+
+.inputData {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 2%;
+    background-color: #718EF5;
+    color: #faf0e6;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+
+.inputData>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inputData input {
+    text-align: center;
+    outline: none;
+}
+
+#buttonAdd {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+#buttonAdd:hover {
+    background-color: #b3b3b3;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.titleForConteinerActionStudant>h3 {
+    color: #ffffff;
+}
+
+
+.containerActionStudant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 2vh;
+    background-color: #718EF5;
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 1vh;
+}
+
+.containerInputCodeStudant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.containerInputCodeStudant>input {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.containerButtonsPrimary {
+    display: flex;
+    gap: 2vh;
+}
+
+button {
+    font-size: 0.8rem;
+    border: none;
+    padding: 1vh;
+}
+
+button:hover {
+    background-color: #b3b3b3;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.closeList {
+    display: none;
+}
+
+#studant {
+    position: fixed;
+    background-color: #718EF5;
+    text-align: center;
+    top: 10%;
+    width: 80%;
+    height: 89%;
+    border-radius: 1vh;
+}
+
+#studant h3 {
+    color: #000000;
+}
+
+#studant li {
+    width: 50%;
+}
+
+#close {
+    font-size: 1rem;
+    position: fixed;
+    left: 49%;
+    bottom: 2%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.divCloseList {
+    position: absolute;
+    border-radius: 10px;
+}
+
+#titleInfoStudant {
+    color: #ffffff;
+}
+
+.conteinerBotoes {
+    width: 50%;
+    background-color: #718EF5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    margin-bottom: 10px;
+    border-radius: 2vh;
+}
+
+.conteinerBotoes button {
+    padding: 10px;
+}
+
+#lista {
+    position: fixed;
+    background-color: #718EF5;
+    text-align: center;
+    top: 10%;
+    width: 50%;
+    height: 89%;
+    border-radius: 1vh;
+}
+
+#lista button {
+    bottom: 3%;
+}
+
+#tituloLista {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+li {
+    background-color: white;
+    padding: 10px;
+    font-size: 1.0rem;
+    text-align: center;
+    list-style: none;
+    border: 1px solid black;
+    width: 80%;
+}
+
+#closeList {
+    font-size: 1rem;
+    position: fixed;
+    left: 49%;
+    bottom: 13%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#closeAlunos2 {
+    font-size: 1rem;
+    position: fixed;
+    left: 49%;
+    bottom: 13%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:450px) {
+    .inputData {
+        width: 80%;
+    }
+
+    .containerActionStudant {
+        width: 85%;
+    }
+
+    .conteinerBotoes {
+        width: 80%;
+        gap: 2vh;
+    }
+
+    #studant {
+        background-color: #687BAC;
+        margin-top: 95px;
+        padding-top: 1vh;
+        width: 90%;
+        height: 70%;
+    }
+
+    #studant li {
+        width: 80%;
+    }
+
+    .divCloseList {
+        bottom: 5%;
+    }
+
+    .divCloseList button {
+        bottom: 5%;
+    }
+
+    .closeAlunos2 {
+        bottom: 5%;
+    }
+
+    #lista {
+        background-color: #687BAC;
+        width: 90%;
+    }
+}

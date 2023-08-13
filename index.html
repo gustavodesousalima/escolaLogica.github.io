@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Escola Lógica</title>
+</head>
+
+<body>
+    <!-- Título Principal -->
+    <div class="titlePrimary">
+        <h1>Escola Lógica</h1>
+    </div>
+
+    <!-- Título Informações Aluno -->
+    <div class="titleInfoStudant">
+        <h2>Informações do Aluno</h2>
+    </div>
+
+    <!-- entrada Informações -->
+    <div class="inputData">
+        <div>
+            <label for="codigo">CÓDIGO</label>
+            <input type="text" placeholder="Código:" id="codigo" name="codigo" maxlength="3">
+        </div>
+
+        <div>
+            <label for="nome">NOME</label>
+            <input type="text" placeholder="Nome:" id="nome" name="nome">
+        </div>
+
+        <div>
+            <label for="sobrenome">SOBRENOME</label>
+            <input type="text" placeholder="Sobrenome:" id="sobrenome" name="sobrenome">
+        </div>
+
+        <div>
+            <label for="nota1">NOTA 1</label>
+            <input type="text" placeholder="Nota 1:" id="nota1" name="nota1" maxlength="4">
+        </div>
+
+        <div>
+            <label for="nota2">NOTA 2</label>
+            <input type="text" placeholder="Nota 2:" id="nota2" name="nota2" maxlength="4">
+        </div>
+
+        <div>
+            <label for="nota3">NOTA 3</label>
+            <input type="text" placeholder="Nota 3:" id="nota3" name="nota3" maxlength="4">
+        </div>
+
+        <div>
+
+            <label for="email">E-MAIL</label>
+            <input type="text" placeholder="E-mail:" id="email" name="email">
+        </div>
+
+        <!-- Botão Para Adicionar Aluno-->
+        <button id="buttonAdd" onclick="adicionarAluno()">ADICIONAR</button>
+    </div>
+
+    <!-- Título para o ContainerActionStudant -->
+    <div class="titleForConteinerActionStudant">
+        <h3>Mais ações</h3>
+    </div>
+
+    <!--Procedimentos para manipulação de dados do aluno-->
+    <div class="containerActionStudant">
+
+
+
+
+        <!-- Código aluno -->
+        <div class="containerInputCodeStudant">
+            <input type="text" id="codeStudant" placeholder="Código" name="codigoAluno" maxlength="3">
+        </div>
+
+        <!-- Botões para manipulação de dados-->
+        <div class="containerButtonsPrimary">
+
+            <button id="buscarAluno" onclick="buscarAluno()">Buscar</button>
+            <button id="removerAluno" onclick="removerAluno()">Remover</button>
+            <button id="desativarAluno" onclick="desativarAluno()">Desativar</button>
+        </div>
+
+    </div>
+
+    <!--Informações do aluno-->
+    <div id="studant" class="closeList">
+        <h3 id="titleInfoStudant"></h3>
+        <ul id="infoAluno"></ul>
+        <div id="divCloseList">
+            <button id="close" onclick="closeList()">X</button>
+        </div>
+    </div>
+
+
+    <div class="conteinerBotoes">
+        <button id="listaCompleta" onclick="listaCompletaAlunos()">Lista completa</button>
+        <button id="alunosAtivos" onclick="alunosAtivos()">Alunos ativos</button>
+        <button id="alunosInativos" onclick="alunosInativos()">Alunos Inativos</button>
+        <button id="alunosAcimaDaMedia" onclick="alunosAprovados()">Alunos acima da média</button>
+        <button id="alunosAbaixoDaMedia" onclick="alunosReprovados()">Alunos abaixo da média</button>
+    </div>
+
+
+    <div id="lista" class="closeList">
+        <h3 id="tituloLista"></h3>
+        <ul id="alunos"></ul>
+        <div class="divCloseList">
+            <button id="closeAlunos2" onclick="closeList()">X</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
