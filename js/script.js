@@ -30,9 +30,9 @@ function adicionarAluno() {
     let codigo = document.getElementById("codigo").value.trim();
     let nome = document.getElementById("nome").value.trim();
     let sobrenome = document.getElementById("sobrenome").value.trim();
-    let nota1 = Number(document.getElementById("nota1").value);
-    let nota2 = Number(document.getElementById("nota2").value);
-    let nota3 = Number(document.getElementById("nota3").value);
+    let nota1 = Math.abs( Number(document.getElementById("nota1").value));
+    let nota2 = Math.abs(Number(document.getElementById("nota2").value));
+    let nota3 = Math.abs(Number(document.getElementById("nota3").value));
     let email = document.getElementById("email").value.trim();
     // calculo de média do aluno.
     let media = ((nota1 * 1 + nota2 * 2 + nota3 * 3) / (1 + 2 + 3)).toFixed(2);
