@@ -111,7 +111,6 @@ function buscarAluno() {
 
     let divStudant = document.getElementById("studant")
 
-
     infoAluno.innerText = ""
     tituloLista.innerHTML = ""
 
@@ -185,7 +184,7 @@ function removerAluno() {
         }
     }
     if (!alunoEncontrado) {
-        alert("Aluno Não Encontrado")
+        alert("Aluno não encontrado!")
     }
 
 }
