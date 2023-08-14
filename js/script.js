@@ -30,7 +30,7 @@ function adicionarAluno() {
     let codigo = document.getElementById("codigo").value.trim();
     let nome = document.getElementById("nome").value.trim();
     let sobrenome = document.getElementById("sobrenome").value.trim();
-    let nota1 = Math.abs( Number(document.getElementById("nota1").value));
+    let nota1 = Math.abs(Number(document.getElementById("nota1").value));
     let nota2 = Math.abs(Number(document.getElementById("nota2").value));
     let nota3 = Math.abs(Number(document.getElementById("nota3").value));
     let email = document.getElementById("email").value.trim();
@@ -61,10 +61,13 @@ function adicionarAluno() {
         // Responsável por verificar se algum valor já foi cadastrado.
         if (codigoJaCadastrado) {
             alert("Código já cadastrado!");
-        }else if(nomeJaCadastrado && sobreNomeJaCadastrado){
+            return;
+        } else if (nomeJaCadastrado && sobreNomeJaCadastrado) {
             alert("Nome e sobrenome do aluno já foi cadastrado!")
-        }else if(emailJaCadastrado){
+            return;
+        } else if (emailJaCadastrado) {
             alert("E-mail já cadastrado!")
+            return;
         } else {
             // Cria objeto novoAluno para guardar informações inseridas pelo usuário.
             let novoAluno = {
