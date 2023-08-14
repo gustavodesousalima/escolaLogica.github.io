@@ -52,11 +52,19 @@ function adicionarAluno() {
         notaValida(nota2)
         notaValida(nota3)
 
-        // Função anônima usando método some, para verificar se algum objeto dentro do array tem o mesmo codigo.
-        const alunoJaCadastrado = listaCompletaDeAlunos.some(aluno => aluno.codigo === codigo)
+        // Funções anônimas usando método some, para verificar se algum objeto dentro do array tem o mesmo valor.
+        const codigoJaCadastrado = listaCompletaDeAlunos.some(aluno => aluno.codigo === codigo)
+        const nomeJaCadastrado = listaCompletaDeAlunos.some(aluno => aluno.nome === nome)
+        const sobreNomeJaCadastrado = listaCompletaDeAlunos.some(aluno => aluno.sobrenome === sobrenome)
+        const emailJaCadastrado = listaCompletaDeAlunos.some(aluno => aluno.email === email)
 
-        if (alunoJaCadastrado) {
+        // Responsável por verificar se algum valor já foi cadastrado.
+        if (codigoJaCadastrado) {
             alert("Código já cadastrado!");
+        }else if(nomeJaCadastrado && sobreNomeJaCadastrado){
+            alert("Nome e sobrenome do aluno já foi cadastrado!")
+        }else if(emailJaCadastrado){
+            alert("E-mail já cadastrado!")
         } else {
             // Cria objeto novoAluno para guardar informações inseridas pelo usuário.
             let novoAluno = {
